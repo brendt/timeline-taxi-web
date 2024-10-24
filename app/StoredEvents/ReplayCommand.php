@@ -7,8 +7,6 @@ use Tempest\Console\ConsoleCommand;
 use Tempest\Console\HasConsole;
 use Tempest\Console\Middleware\ForceMiddleware;
 use Tempest\Container\Container;
-use Tempest\Reflection\ClassReflector;
-use TypeError;
 
 final readonly class ReplayCommand
 {
