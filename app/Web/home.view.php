@@ -7,7 +7,7 @@
 </head>
 <body class="flex justify-center items-center bg-[#0a0f12] text-white">
 
-<div class="grid gap-4 max-w-[600px] p-4 pb-32">
+<div class="grid gap-4 max-w-[600px] p-4">
     <h1 class="text-5xl font-bold">Timeline Taxi</h1>
 
     <div class="p-2 grid md:gap-16 gap-8">

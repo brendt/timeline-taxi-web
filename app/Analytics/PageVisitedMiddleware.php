@@ -24,7 +24,7 @@ final readonly class PageVisitedMiddleware implements HttpMiddleware
 
     public function __invoke(Request $request, callable $next): Response
     {
-//        event(new PageVisited($request->getUri()));
+        event(new PageVisited($request->getUri()));
 
         return $next($request);
     }

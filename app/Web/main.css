@@ -32,3 +32,8 @@ a {
 img {
     border: 2px solid #ffffffaa;
 }
+
+body {
+    background: rgb(79,149,209);
+    background: radial-gradient(circle, #1a2b30 20%, #000000 80%);
+}
