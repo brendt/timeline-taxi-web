@@ -17,15 +17,15 @@ use function Tempest\uri;
 
     <meta name="twitter:card" content="summary_large_image"/>
     <meta property="og:type" content="article">
-    <meta name="twitter:title" content="Timeline Taxi — Out now!">
     <meta name="twitter:creator" content="@brendt_gd"/>
-    <meta name="title" content="Timeline Taxi — Out now!">
-    <meta property="og:title" content="Timeline Taxi — Out now!">
-    <meta itemprop="name" content="Timeline Taxi — Out now!">
-    <meta name="description" content="Buy Timeline Taxi right now on Amazon">
-    <meta name="twitter:description" content="Buy Timeline Taxi right now on Amazon">
-    <meta property="og:description" content="Buy Timeline Taxi right now on Amazon">
-    <meta itemprop="description" content="Buy Timeline Taxi right now on Amazon">
+    <meta name="twitter:title" content="Timeline Taxi — now available!">
+    <meta name="title" content="Timeline Taxi — now available!">
+    <meta property="og:title" content="Timeline Taxi — now available!">
+    <meta itemprop="name" content="Timeline Taxi — now available!">
+    <meta name="description" content="E-book and paperback versions are now available on Amazon!">
+    <meta name="twitter:description" content="E-book and paperback versions are now available on Amazon!">
+    <meta property="og:description" content="E-book and paperback versions are now available on Amazon!">
+    <meta itemprop="description" content="E-book and paperback versions are now available on Amazon!">
 
     <meta property="og:image" content="<?= uri('/timeline-taxi-meta.jpg') ?>"/>
     <meta property="twitter:image" content="<?= uri('/timeline-taxi-meta.jpg') ?>"/>
