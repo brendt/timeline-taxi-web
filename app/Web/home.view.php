@@ -1,13 +1,35 @@
+<?php
+
+use function Tempest\uri;
+
+?>
 <html lang="en">
 <head>
     <title>Timeline Taxi</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="/main.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="og:type" content="article">
+    <meta name="twitter:title" content="Timeline Taxi — Out now!">
+    <meta name="twitter:creator" content="@brendt_gd"/>
+    <meta name="title" content="Timeline Taxi — Out now!">
+    <meta property="og:title" content="Timeline Taxi — Out now!">
+    <meta itemprop="name" content="Timeline Taxi — Out now!">
+    <meta name="description" content="Buy Timeline Taxi right now on Amazon">
+    <meta name="twitter:description" content="Buy Timeline Taxi right now on Amazon">
+    <meta property="og:description" content="Buy Timeline Taxi right now on Amazon">
+    <meta itemprop="description" content="Buy Timeline Taxi right now on Amazon">
+
+    <meta property="og:image" content="<?= uri('/timeline-taxi-meta.jpg') ?>"/>
+    <meta property="twitter:image" content="<?= uri('/timeline-taxi-meta.jpg') ?>"/>
+    <meta name="image" content="<?= uri('/timeline-taxi-meta.jpg') ?>"/>
 </head>
 <body class="flex justify-center items-center bg-[#0a0f12] text-white">
 
