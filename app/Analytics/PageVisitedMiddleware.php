@@ -8,6 +8,7 @@ use Tempest\Http\HttpMiddleware;
 use Tempest\Http\Request;
 use Tempest\Http\Response;
 use Tempest\Http\Router;
+use function Tempest\defer;
 use function Tempest\event;
 
 final readonly class PageVisitedMiddleware implements HttpMiddleware
@@ -24,7 +25,9 @@ final readonly class PageVisitedMiddleware implements HttpMiddleware
 
     public function __invoke(Request $request, callable $next): Response
     {
-        event(new PageVisited($request->getUri()));
+        defer(function () use ($request) {
+            event(new PageVisited($request->getUri()));
+        });
 
         return $next($request);
     }
