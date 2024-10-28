@@ -30,15 +30,17 @@ final readonly class VisitsPerDayPerPageProjector implements Projector
     {
         $visitedAt = $pageVisited->visitedAt->setTime(0, 0);
 
+        $uri = parse_url($pageVisited->uri, PHP_URL_PATH);
+
         $day = VisitsPerDayPerPage::query()
             ->whereField('date', $visitedAt->format('Y-m-d H:i:s'))
-            ->whereField('uri', $pageVisited->uri)
+            ->whereField('uri', $uri)
             ->first();
 
         if (! $day) {
             $day = new VisitsPerDayPerPage(
                 visits: 0,
-                uri: $pageVisited->uri,
+                uri: $uri,
                 date: $visitedAt,
             );
         }
