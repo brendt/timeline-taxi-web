@@ -51,8 +51,8 @@ use function Tempest\uri;
             </p>
         </div>
 
-        <x-quote author="Sven">
-            That last chapter had me on the edge of my seat. Great story, and I really enjoyed the writing as well! It painted every scene very nicely, and the characters are super interesting
+        <x-quote author="Marco" href="https://x.com/marcorieser/status/1851874619290014066">
+            I just started reading the preview in Apple Books, and so far it's phenomenal! If you ever want to change careers, become a writer.
         </x-quote>
 
         <div class="text-center grid gap-4 underline hover:no-underline">
