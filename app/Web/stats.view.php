@@ -9,13 +9,11 @@
 
 
         <table class="table-fixed">
-            <?php foreach ($visitsPerDayPerPage as $visit): ?>
-                <tr>
-                    <td class="font-bold">{{ $visit->date->format('Y-m-d') }}</td>
-                    <td>{{ $visit->uri }}</td>
-                    <td>{{ $visit->visits }}</td>
-                </tr>
-            <?php endforeach ?>
+            <tr :foreach="$this->visitsPerDayPerPage as $visit">
+                <td class="font-bold">{{ $visit->date->format('Y-m-d') }}</td>
+                <td>{{ $visit->uri }}</td>
+                <td>{{ $visit->visits }}</td>
+            </tr>
         </table>
     </div>
 

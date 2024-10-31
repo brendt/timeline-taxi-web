@@ -1,10 +1,17 @@
+<?php
+
+use App\Web\BuyController;
+use App\Web\BuyType;
+use function Tempest\uri;
+
+?>
 <x-base>
 
 <div class="grid gap-4 max-w-[600px] p-4">
     <h1 class="text-5xl font-bold mt-24 mb-2">Timeline Taxi</h1>
 
     <div class="p-4 bg-[#1a2b30] rounded shadow-2xl mb-4">
-        Now available on <a href="/buy">Kindle</a> and <a href="/buy">paperback</a>!
+        Now available on <a href="<?= uri(BuyController::class, buyType: BuyType::APPLE->value)?>">Apple Books</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KOBO->value)?>">Kobo</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KINDLE->value)?>">Kindle</a> and <a href="<?= uri(BuyController::class, buyType: BuyType::AMAZON->value)?>">paperback</a>!
     </div>
 
     <div class="p-2 grid md:gap-16 gap-8">
@@ -48,12 +55,16 @@
             That last chapter had me on the edge of my seat. Great story, and I really enjoyed the writing as well! It painted every scene very nicely, and the characters are super interesting
         </x-quote>
 
-        <a class="text-center grid gap-4 underline hover:no-underline" href="/buy">
+        <div class="text-center grid gap-4 underline hover:no-underline">
             <div class="md:px-32">
                 <img src="/timeline-taxi-cover.jpg" alt="The book cover of Timeline Taxi" class="shadow-lg">
             </div>
-            <span>Buy now on Amazon</span>
-        </a>
+        </div>
+
+
+        <div class="p-4 bg-[#1a2b30] rounded shadow-2xl mb-4">
+            Buy on <a href="<?= uri(BuyController::class, buyType: BuyType::APPLE->value)?>">Apple Books</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KOBO->value)?>">Kobo</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KINDLE->value)?>">Kindle</a> and <a href="<?= uri(BuyController::class, buyType: BuyType::AMAZON->value)?>">paperback</a>!
+        </div>
     </div>
 
     <div class="text-center text-sm md:my-16">
