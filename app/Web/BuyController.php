@@ -10,7 +10,7 @@ final readonly class BuyController
     #[Get('/buy')]
     public function buy(): Redirect
     {
-        return ($this)(BuyType::AMAZON->getUri());
+        return ($this)(BuyType::AMAZON->value);
     }
 
     #[Get('/buy/{buyType}')]
