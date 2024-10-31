@@ -23,10 +23,10 @@ use function Tempest\uri;
         <meta name="title" content="Timeline Taxi — now available!">
         <meta property="og:title" content="Timeline Taxi — now available!">
         <meta itemprop="name" content="Timeline Taxi — now available!">
-        <meta name="description" content="E-book and paperback versions are now available on Amazon!">
-        <meta name="twitter:description" content="E-book and paperback versions are now available on Amazon!">
-        <meta property="og:description" content="E-book and paperback versions are now available on Amazon!">
-        <meta itemprop="description" content="E-book and paperback versions are now available on Amazon!">
+        <meta name="description" content="E-book and paperback, available on Amazon, Kindle, Apple Books, and Kobo!">
+        <meta name="twitter:description" content="E-book and paperback, available on Amazon, Kindle, Apple Books, and Kobo!">
+        <meta property="og:description" content="E-book and paperback, available on Amazon, Kindle, Apple Books, and Kobo!">
+        <meta itemprop="description" content="E-book and paperback, available on Amazon, Kindle, Apple Books, and Kobo!">
 
         <meta property="og:image" content="<?= uri('/timeline-taxi-meta.jpg') ?>"/>
         <meta property="twitter:image" content="<?= uri('/timeline-taxi-meta.jpg') ?>"/>
