@@ -11,7 +11,7 @@ use function Tempest\uri;
     <h1 class="text-5xl font-bold mt-24 mb-2">Timeline Taxi</h1>
 
     <div class="p-4 bg-[#1a2b30] rounded shadow-2xl mb-4">
-        Now available on <a href="<?= uri(BuyController::class, buyType: BuyType::APPLE->value)?>">Apple Books</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KOBO->value)?>">Kobo</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KINDLE->value)?>">Kindle</a> and <a href="<?= uri(BuyController::class, buyType: BuyType::AMAZON->value)?>">paperback</a>!
+        Now available on <a href="<?= uri(BuyController::class, buyType: BuyType::APPLE->value)?>">Apple Books</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KOBO->value)?>">Kobo</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::GOOGLE->value)?>">Google Play</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KINDLE->value)?>">Kindle</a> and <a href="<?= uri(BuyController::class, buyType: BuyType::AMAZON->value)?>">paperback</a>!
     </div>
 
     <div class="p-2 grid md:gap-16 gap-8">
@@ -63,7 +63,7 @@ use function Tempest\uri;
 
 
         <div class="p-4 bg-[#1a2b30] rounded shadow-2xl mb-4">
-            Buy on <a href="<?= uri(BuyController::class, buyType: BuyType::APPLE->value)?>">Apple Books</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KOBO->value)?>">Kobo</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KINDLE->value)?>">Kindle</a> and <a href="<?= uri(BuyController::class, buyType: BuyType::AMAZON->value)?>">paperback</a>!
+            Buy on <a href="<?= uri(BuyController::class, buyType: BuyType::APPLE->value)?>">Apple Books</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KOBO->value)?>">Kobo</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::GOOGLE->value)?>">Google Play</a>, <a href="<?= uri(BuyController::class, buyType: BuyType::KINDLE->value)?>">Kindle</a> and <a href="<?= uri(BuyController::class, buyType: BuyType::AMAZON->value)?>">paperback</a>!
         </div>
     </div>
 

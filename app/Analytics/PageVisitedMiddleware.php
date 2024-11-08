@@ -5,6 +5,7 @@ namespace App\Analytics;
 use Tempest\Core\KernelEvent;
 use Tempest\EventBus\EventHandler;
 use Tempest\Http\HttpMiddleware;
+use Tempest\Http\HttpMiddlewareCallable;
 use Tempest\Http\Request;
 use Tempest\Http\Response;
 use Tempest\Http\Router;
@@ -23,7 +24,7 @@ final readonly class PageVisitedMiddleware implements HttpMiddleware
         $this->router->addMiddleware(self::class);
     }
 
-    public function __invoke(Request $request, callable $next): Response
+    public function __invoke(Request $request, HttpMiddlewareCallable $next): Response
     {
         defer(function () use ($request) {
             event(new PageVisited($request->getUri()));

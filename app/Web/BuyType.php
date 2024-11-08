@@ -16,7 +16,7 @@ enum BuyType: string
             self::KINDLE => 'https://www.amazon.com/Timeline-Taxi-Brent-Roose-ebook/dp/B0DK5YVTFP?_encoding=UTF8&qid=&sr=',
             self::AMAZON => 'https://www.amazon.com/Timeline-Taxi-Brent-Roose/dp/B0DL4MTGSV?_encoding=UTF8&qid=&sr=',
             self::APPLE => 'https://books.apple.com/us/book/timeline-taxi/id6737520432',
-            self::GOOGLE => '#',
+            self::GOOGLE => 'https://play.google.com/store/books/details/Brent_Roose_Timeline_Taxi?id=HhstEQAAQBAJ',
             self::KOBO => 'https://www.kobo.com/be/en/ebook/timeline-taxi',
         };
     }
