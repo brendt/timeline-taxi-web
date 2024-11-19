@@ -67,8 +67,10 @@ use function Tempest\uri;
         </div>
     </div>
 
-    <div class="text-center text-sm md:my-16">
-        &copy; Brent Roose <?= date('Y') ?>
+    <div class="text-center text-sm md:my-16 flex gap-2 justify-center">
+        <span>&copy; Brent Roose <?= date('Y') ?></span>
+        <span>—</span>
+        <a href="mailto:brendt@stitcher.io">Contact Me</a>
     </div>
 </div>
 
